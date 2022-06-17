@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/iconsfont.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="search">
+        <button class="location-btn"><i class="icon-location"></i></button>
+        <input
+          placeholder="Введите название города"
+          class="search-bar"
+          type="text"
+        />
+        <button class="search-btn">
+          <i class="icon-search"></i>
+        </button>
+      </div>
+      <div class="weather">
+        <h1 class="city"></h1>
+        <p class="date"></p>
+        <h2 class="description"></h2>
+        <div class="main">
+          <i class="icon-main"></i>
+          <h3 class="temp"></h3>
+        </div>
+        <p class="feels-temp"></p>
+        <div class="add-info">
+          <div class="humidity">
+            <i class="icon-humidity"></i>
+            <p class="info-humidity"></p>
+          </div>
+          <div class="wind">
+            <i class="icon-wind"></i>
+            <p class="info-wind"></p>
+          </div>
+          <div class="pressure">
+            <i class="icon-pressure"></i>
+            <p class="info-pressure"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
