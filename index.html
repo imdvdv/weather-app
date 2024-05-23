@@ -1,59 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/iconsfont.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Weather App</title>
-  </head>
-  <body>
-    <div class="container">
-      <div class="search">
-        <button class="location-btn"><i class="icon-location"></i></button>
-        <input
-          placeholder="Введите название города"
-          class="search-bar"
-          type="text"
-        />
-        <button class="search-btn">
-          <i class="icon-search"></i>
-        </button>
-      </div>
-      <div class="weather">
-        <h1 class="city"></h1>
-        <p class="date"></p>
-        <h2 class="description"></h2>
-        <div class="main">
-          <i class="icon-main"></i>
-          <h3 class="temp"></h3>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"/>
+        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+        <title>Weather App</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="title">
+                <span style="font-weight: normal">Узнайте</span> погоду <br />
+                <span style="font-weight: normal">в интересующем вас </span>городе
+            </h1>
+            <div class="search">
+                <button class="btn location-btn" title="Найти по местоположению"><i class="fa-solid fa-location-dot"></i></button>
+                <input placeholder="Введите название города" class="search-bar" type="text"/>
+                <button class="btn search-btn" title="Поиск"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="weather-wrapper">
+                <h1 class="city"></h1>
+                <p class="date">
+                    <i class="icon icon-date fa-regular fa-calendar-days"></i></i>
+                    <span class="data data-date"></span>
+                </p>
+                <h2 class="description"></h2>
+                <div class="main-info">
+                    <i class="icon-main"></i>
+                    <h3 class="temp"></h3>
+                </div>
+                <p class="feels-temp">
+                    <i class="icon icon-feels-temp fa-solid fa-wind"></i>
+                    <span class="data data-feels-temp"></span>
+                </p>
+                <div class="additional-info">
+                    <div class="wind">
+                        <i class="icon icon-wind fa-solid fa-wind"></i>
+                        <p class="data data-wind"></p>
+                    </div>
+                    <div class="pressure">
+                        <i class="icon icon-pressure fa-solid fa-gauge-simple"></i>
+                        <p class="data data-pressure"></p>
+                    </div>
+                    <div class="humidity">
+                        <i class="icon icon-humidity fa-solid fa-droplet"></i>
+                        <p class="data data-humidity"></p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <p class="feels-temp"></p>
-        <div class="add-info">
-          <div class="humidity">
-            <i class="icon-humidity"></i>
-            <p class="info-humidity"></p>
-          </div>
-          <div class="wind">
-            <i class="icon-wind"></i>
-            <p class="info-wind"></p>
-          </div>
-          <div class="pressure">
-            <i class="icon-pressure"></i>
-            <p class="info-pressure"></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <script src="js/script.js"></script>
-  </body>
+        <script src="js/script.js"></script>
+    </body>
 </html>
