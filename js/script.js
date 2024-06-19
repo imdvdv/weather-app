@@ -100,16 +100,14 @@ function getByCityName (city) {
     });
 
     searchBar.addEventListener('keyup', function (e) {
-        let searchValue = searchBar.value;
         if (e.key === 'Enter' && searchValue !== '') {
-            getByCityName(searchValue);
+            getByCityName(searchBar.value);
         }
     });
 
     searchBtn.addEventListener('click', function () {
-        let searchValue = searchBar.value;
-        if (searchValue !== '') {
-            getByCityName(searchValue);
+        if (searchBar.value !== '') {
+            getByCityName(searchBar.value);
         }
     });
 
