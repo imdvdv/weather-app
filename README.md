@@ -26,10 +26,10 @@ __Зависимости__
 
 1. Cкопируйте репозиторий себе на локальную машину.
 
-2. Получите свой API ключ на сайте [OpenWeather](https://openweathermap.org) и в файле `js/script.js` вставьте свое значение в соответствующую константу: 
+2. Получите свой API ключ на сайте [OpenWeather](https://openweathermap.org) и в файле `js/script.js` вставьте значение в соответствующую константу: 
 
    ```js
-      apiKey = 'YOUR_OPENWEATHER_API-KEY',
+      const apiKey = 'YOUR_OPENWEATHER_API-KEY',
    ```
 3.  Стартуйте приложение.
 
